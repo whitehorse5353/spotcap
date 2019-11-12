@@ -1,0 +1,30 @@
+{
+  "name": "spotcap-backend-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whitehorse5353/spotcap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whitehorse5353/spotcap/issues"
+  },
+  "homepage": "https://github.com/whitehorse5353/spotcap#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.21.0",
+    "node-irr": "^2.0.3",
+    "swagger-ui-express": "^4.1.1",
+    "winston": "^3.2.1"
+  }
+}
