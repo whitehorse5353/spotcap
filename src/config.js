@@ -4,7 +4,7 @@ const {
     APP_BASE_URL,
     CORS_ORIGIN,
     LOG_LEVEL,
-    ENABLE_SWAGGER
+    NODE_ENV
 } = process.env;
 
 module.exports = {
@@ -14,14 +14,8 @@ module.exports = {
         baseURL: APP_BASE_URL
     },
     corsConfig: {
-        origin: CORS_ORIGIN,
-        methods: ['POST', 'GET']
-    },
-    cspConfig: {
-        directives: {
-            defaultSrc: ["'self'"]
-        }
+        origin: CORS_ORIGIN
     },
     logLevel: LOG_LEVEL,
-    hasSwagger: ENABLE_SWAGGER
+    hasSwagger: NODE_ENV !== 'production'
 };
